@@ -107,24 +107,35 @@ em {
   background: url(../images/bg-corner-percentage.png);
   width: 60px;
   height: 61px;
-  background-position-y: -70px;
+  background-position-y: 0px;
   background-position-x: -8px;
 }
 
 #carousel .image-set:hover .corner {
-  background-position-y: 0px;
+  background-position-y: -70px;
   background-position-x: -8px;
 }
 
 #carousel .image-set .corner p {
   font-size: 12;
   font-weight: bold;
-  color: white;
+  color: black;
   margin-left: 30px;
 }
 
 #carousel .image-set:hover .corner p {
-  color: black;
+  color: white;
+}
+
+#carousel .image-set .view-item {
+  position: absolute;
+  left: 5px;
+  top: 30px;
+  display: none;
+}
+
+#carousel .image-set:hover .view-item {
+  display: block;
 }
 
 .ui-carousel {
