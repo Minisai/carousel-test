@@ -1,6 +1,9 @@
 jQuery(function($) {
   $( "#carousel ").rcarousel({
-    margin: 100
+    margin: 10,
+    visible: 5,
+    step: 1,
+    carousel_height: 200
   });
 
   $( "#ui-carousel-next" )

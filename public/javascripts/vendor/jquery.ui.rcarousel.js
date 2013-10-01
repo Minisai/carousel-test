@@ -750,9 +750,9 @@
 				options = this.options;
 
 			if ( options.orientation === "vertical" ) {
-				_newHeight = options.visible * options.height + options.margin * (options.visible - 1);
+				_newHeight = options.visible * options.carousel_height + options.margin * (options.visible - 1);
 			} else {
-				_newHeight = options.height;
+				_newHeight = options.carousel_height;
 			}
 
 			$root.height(_newHeight);
@@ -781,6 +781,7 @@
 			visible: 3,
 			step: 3,
 			width: 100,
+      carousel_height: 100,
 			height: 100,
 			speed: 1000,
 			margin: 0,
