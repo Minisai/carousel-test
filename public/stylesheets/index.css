@@ -82,7 +82,7 @@ em {
 }
 #container {
   height: 200px;
-  width: 660px;
+  width: 690px;
   position: relative;
 }
 
@@ -90,13 +90,41 @@ em {
   margin: 0 auto;
 }
 
-#carousel img {
+#carousel .image-set {
   border: 1px solid #ccc;
+  position: relative;
 }
 
-#carousel img:hover {
+#carousel .image-set:hover {
   background: rgba(255, 0, 0, .7);
   -webkit-transform: scale(1.2);
+}
+
+#carousel .image-set .corner {
+  position: absolute;
+  left: 40px;
+  z-index: 2;
+  background: url(../images/bg-corner-percentage.png);
+  width: 60px;
+  height: 61px;
+  background-position-y: -70px;
+  background-position-x: -8px;
+}
+
+#carousel .image-set:hover .corner {
+  background-position-y: 0px;
+  background-position-x: -8px;
+}
+
+#carousel .image-set .corner p {
+  font-size: 12;
+  font-weight: bold;
+  color: white;
+  margin-left: 30px;
+}
+
+#carousel .image-set:hover .corner p {
+  color: black;
 }
 
 .ui-carousel {
