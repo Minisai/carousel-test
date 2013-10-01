@@ -1,0 +1,141 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+}
+
+body {
+  font: 16px/1.5 sans-serif;
+}
+
+#header {
+  background-color: #FF5C43;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#content {
+  margin: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: #fff;
+}
+
+#content a:link, #content a:visited, #content a:hover, #content a:active {
+  color: #ff5c43;
+}
+
+em {
+  font-style: italic;
+}
+#container {
+  width: 440px;
+  position: relative;
+}
+
+#carousel {
+  margin: 0 auto;
+}
+
+#carousel img {
+  border: 0;
+}
+
+.ui-carousel {
+  height: 100px;
+  margin: 0;
+  overflow: auto;
+  padding: 0;
+  position: relative; /*for ie7 to work e.g in html carousels*/
+  width: 300px
+}
+
+.ui-carousel > .wrapper {
+  margin: 0;
+  padding: 0;
+  width: 9999px;
+}
+
+.ui-carousel > .wrapper > * {
+  border: 0;
+  display: block;
+  float: left;
+  height: 100px;
+  overflow: hidden;
+  width: 100px;
+}
+
+#ui-carousel-next, #ui-carousel-prev {
+  width: 60px;
+  height: 100px;
+  background: url(../images/scroll-left.png) #fff center center no-repeat;
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+}
+
+#ui-carousel-next {
+  right: 0;
+  background-image: url(../images/scroll-right.png);
+}
+
+#ui-carousel-prev {
+  left: 0;
+}
+
+#ui-carousel-next > span, #ui-carousel-prev > span {
+  display: none;
+}
